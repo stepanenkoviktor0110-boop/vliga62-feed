@@ -17,6 +17,16 @@ const SERVICES = [
   ['recikling', 'https://vliga62.ru/retsikling-zhelezobetona/'],
 ];
 
+// Обогащение описаний синонимами клиента (Multi-trigger): поднимает нужную карточку в ретриве,
+// разводит лексически близкие услуги (вывоз мусора ↔ рециклинг боя). Добавляется строкой «Запросы: …».
+const ENRICH = {
+  'vyvoz-othodov': 'Запросы: вывоз строительного мусора, вывоз мусора и грунта, утилизация строительных отходов, уборка и расчистка территории после стройки, вывоз хлама и отходов.',
+  'recikling': 'Запросы: переработка и дробление железобетона, приём боя бетона и кирпича, утилизация ЖБИ, вторичный щебень.',
+  'arenda-spetstekhniki': 'Запросы: аренда экскаватора, самосвала, крана, бульдозера, погрузчика, автовышки, спецтехники с водителем.',
+  'postavka-materialov': 'Запросы: купить щебень, песок, грунт, сыпучие и строительные материалы с доставкой.',
+  'zemelnye-raboty': 'Запросы: вырыть котлован, траншея, обратная засыпка, планировка участка, земляные работы.',
+};
+
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36';
 const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 
@@ -52,7 +62,8 @@ function extract(html, id, url) {
     .map(m => strip(m[1]))
     .filter(t => t.length >= 40 && !/cookie|политик|©|обработк персональных/i.test(t));
   let description = ps.slice(0, 2).join(' ');
-  if (description.length > 700) description = description.slice(0, 697).replace(/\s\S*$/, '') + '…';
+  if (description.length > 600) description = description.slice(0, 597).replace(/\s\S*$/, '') + '…';
+  if (ENRICH[id]) description += ' ' + ENRICH[id];
   // фото услуги: первый контентный upload, кроме иконок/логотипов
   const imgs = [...html.matchAll(/https:\/\/vliga62\.ru\/wp-content\/uploads\/[^\s"']+\.(?:jpg|jpeg|png|webp)/gi)]
     .map(m => m[0])
