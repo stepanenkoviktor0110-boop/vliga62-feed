@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yml_catalog date="2026-06-18">
+  <shop>
+    <name>ГК «Высшая лига»</name>
+    <company>ГК «Высшая лига»</company>
+    <url>https://vliga62.ru</url>
+    <currencies><currency id="RUB" rate="1"/></currencies>
+    <categories><category id="1">Услуги</category></categories>
+    <offers>
+      <offer id="arenda-spetstekhniki" available="true">
+        <url>https://vliga62.ru/arenda-spetstekhniki/</url>
+        <picture>https://vliga62.ru/wp-content/uploads/2025/05/1-single-service.jpg</picture>
+        <categoryId>1</categoryId>
+        <vendor>ГК «Высшая лига»</vendor>
+        <vendorCode>arenda-spetstekhniki</vendorCode>
+        <currencyId>RUB</currencyId>
+        <quantity>1</quantity>
+        <name>Аренда спецтехники</name>
+        <description>Компания «Высшая Лига» предлагает широкий выбор надежной и мощной спецтехники для решения ваших задач. В ассортименте представлены краны, экскаваторы, бульдозеры, самосвалы, погрузчики и другая тяжелая и легкая специальная техника. Аренда спецтехники — это оптимальный выбор, позволяющий снизить расходы и повысить эффективность выполнения работ. Мы предоставляем услуги по аренде спецтехники в городе Рязани и области. Наша команда состоит из опытных специалистов, которые безупречно выполняют свои обязанности. Многие клиенты возвращаются к нам, убедившись в удобстве и качестве сотрудничества.</description>
+      </offer>
+      <offer id="asfaltirovka" available="true">
+        <url>https://vliga62.ru/asfaltirovka-and-blagoustroystvo/</url>
+        <picture>https://vliga62.ru/wp-content/uploads/2025/05/2-home-single-service.jpg</picture>
+        <categoryId>1</categoryId>
+        <vendor>ГК «Высшая лига»</vendor>
+        <vendorCode>asfaltirovka</vendorCode>
+        <currencyId>RUB</currencyId>
+        <quantity>1</quantity>
+        <name>Асфальтировка и благоустройство</name>
+        <description>Наша компания предлагает профессиональные услуги по асфальтированию производственных площадей любой сложности и объема. Также в перечень наших услуг входит благоустройство любых территорий. Одним из ключевых аспектов комфортного проживания является качественное асфальтирование проезжей части и дворовых территорий. Создание надежных дорог обеспечивает жителям возможность свободного передвижения между домами в любое время года. Следующим этапом благоустройства является приведение в порядок газонов и тротуаров. Работы по благоустройству проезжей части и пешеходных дорожек выполняются с использованием следующих материалов:</description>
+      </offer>
+      <offer id="demontazh" available="true">
+        <url>https://vliga62.ru/demontazhnye-raboty-lyuboy-slozhnosti-ruchnoy-demontazh-mekhanizirovannyy-spetstekhnikoy/</url>
+        <picture>https://vliga62.ru/wp-content/uploads/2025/05/3-home-single-service.jpg</picture>
+        <categoryId>1</categoryId>
+        <vendor>ГК «Высшая лига»</vendor>
+        <vendorCode>demontazh</vendorCode>
+        <currencyId>RUB</currencyId>
+        <quantity>1</quantity>
+        <name>Демонтажные работы любой сложности (ручной демонтаж, механизированный спецтехникой)</name>
+        <description>Наша компания предлагает профессиональные услуги по демонтажу зданий и сооружений любой сложности. В нашем штате работают высококвалифицированные специалисты, а также имеется современное специализированное оборудование и техника. Демонтаж современных и устаревших строений требует точного расчета применяемых усилий, поскольку такие конструкции обладают высокой прочностью и устойчивостью к механическим воздействиям.</description>
+      </offer>
+      <offer id="zemelnye-raboty" available="true">
+        <url>https://vliga62.ru/zemelnye-raboty-ryte-kotlovanov-obratnaya-zasypka-peska-with-uplotneniem-and-t-d/</url>
+        <picture>https://vliga62.ru/wp-content/uploads/2025/05/4-home-single-service.jpg</picture>
+        <categoryId>1</categoryId>
+        <vendor>ГК «Высшая лига»</vendor>
+        <vendorCode>zemelnye-raboty</vendorCode>
+        <currencyId>RUB</currencyId>
+        <quantity>1</quantity>
+        <name>Земельные работы (рытье котлованов, обратная засыпка песка с уплотнением и т.д.)</name>
+        <description>Земельные работы являются неотъемлемым этапом любого строительного проекта или процесса благоустройства территории. Наша компания предлагает полный спектр услуг по землеустройству, используя надежную специализированную технику, управляемую опытными операторами, имеющими все необходимые сертификаты. Мы осуществляем зачистку территории, планировку копку, вывоз грунта на другие участки и его утилизацию с минимальным ущербом для окружающей среды. Мы выполняем земельные работы точно в срок, даже в условиях форс-мажорных обстоятельств, благодаря резервированию парка спецтехники и наличию надежных сотрудников. Рытье котлована является частью нулевого цикла любого строительного проекта, поэтому…</description>
+      </offer>
+      <offer id="betonnye-raboty" available="true">
+        <url>https://vliga62.ru/betonnye-raboty/</url>
+        <picture>https://vliga62.ru/wp-content/uploads/2025/05/5-home-single-service.jpg</picture>
+        <categoryId>1</categoryId>
+        <vendor>ГК «Высшая лига»</vendor>
+        <vendorCode>betonnye-raboty</vendorCode>
+        <currencyId>RUB</currencyId>
+        <quantity>1</quantity>
+        <name>Бетонные работы</name>
+        <description>Возведение и заливка монолита представляют собой одни из наиболее эффективных и востребованных методов строительства современных зданий и благоустройства территорий. Бетонные работы служат основой для создания прочных, надежных и долговечных конструкций, способных сохранять свою функциональность на протяжении многих лет. Наша компания предлагает широкий спектр услуг в области бетонных работ, учитывая все нюансы и особенности технологий. Мы применяем современное и надежное оборудование от ведущих отечественных и зарубежных производителей. Все водители и машинисты специальной техники регулярно проходят курсы повышения квалификации и обладают соответствующими сертификатами.</description>
+      </offer>
+      <offer id="postavka-materialov" available="true">
+        <url>https://vliga62.ru/postavka-materialov/</url>
+        <picture>https://vliga62.ru/wp-content/uploads/2025/05/6-home-single-service.jpg</picture>
+        <categoryId>1</categoryId>
+        <vendor>ГК «Высшая лига»</vendor>
+        <vendorCode>postavka-materialov</vendorCode>
+        <currencyId>RUB</currencyId>
+        <quantity>1</quantity>
+        <name>Поставка материалов</name>
+        <description>В процессе строительства невозможно обойтись без использования различных сыпучих материалов. При возведении зданий, прокладке автомобильных дорог и железнодорожного полотна всегда требуются такие материалы, как песок, супесь, гравий, щебень и керамзит. Поставка сыпучих материалов может представлять определенные сложности, особенно если у подрядчика отсутствует специализированная техника, способная доставить груз без потерь. Наша компания предлагает комплексные решения по поставке всех типов сыпучих материалов на этапах строительных и производственных работ:</description>
+      </offer>
+      <offer id="vyvoz-othodov" available="true">
+        <url>https://vliga62.ru/vyvoz-and-utilizatsiya-otkhodov/</url>
+        <picture>https://vliga62.ru/wp-content/uploads/2025/05/7-home-single-service.jpg</picture>
+        <categoryId>1</categoryId>
+        <vendor>ГК «Высшая лига»</vendor>
+        <vendorCode>vyvoz-othodov</vendorCode>
+        <currencyId>RUB</currencyId>
+        <quantity>1</quantity>
+        <name>Вывоз и утилизация отходов</name>
+        <description>Как компании, так и частные лица осознают, что после проведения ремонтных и строительных работ остаются значительные объемы как крупного, так и мелкого мусора. Любой жилой район или предприятие производит различные виды отходов в масштабах, приближающихся к промышленным. Своевременный вывоз и утилизация отходов с жилых и промышленных территорий являются важными аспектами обеспечения безопасной жизнедеятельности, эффективной работы и благоустройства окружающей среды. Не каждый собственник может позволить себе приобретение контейнеров, особенно когда речь идет о единоразовом вывозе специфического мусора. В таких случаях это становится экономически нецелесообразным.</description>
+      </offer>
+      <offer id="stroitelstvo-angarov" available="true">
+        <url>https://vliga62.ru/stroitelstvo-angarov-skladov-iz-metallokonstruktsiy-under-klyuch/</url>
+        <picture>https://vliga62.ru/wp-content/uploads/2025/05/1-home-service.jpg</picture>
+        <categoryId>1</categoryId>
+        <vendor>ГК «Высшая лига»</vendor>
+        <vendorCode>stroitelstvo-angarov</vendorCode>
+        <currencyId>RUB</currencyId>
+        <quantity>1</quantity>
+        <name>Строительство ангаров, складов из металлоконструкций под ключ</name>
+        <description>Группа компаний «Высшая лига» предлагает все необходимое для успешного и качественного строительства ангаров. Мы располагаем современным проектным институтом, который обеспечивает разработку инновационных и эффективных проектных решений, соответствующих самым высоким стандартам для ангарных сооружений. Наша производственная база оснащена современным оборудованием, что позволяет нам осуществлять полный цикл работ — от проектирования до реализации. Квалифицированные специалисты нашей команды имеют богатый опыт работы в сфере строительства ангаров и способны справиться с задачами любой сложности.</description>
+      </offer>
+      <offer id="recikling" available="true">
+        <url>https://vliga62.ru/retsikling-zhelezobetona/</url>
+        <picture>https://vliga62.ru/wp-content/uploads/2025/05/7-home-single-service.jpg</picture>
+        <categoryId>1</categoryId>
+        <vendor>ГК «Высшая лига»</vendor>
+        <vendorCode>recikling</vendorCode>
+        <currencyId>RUB</currencyId>
+        <quantity>1</quantity>
+        <name>Рециклинг железобетона</name>
+        <description>Группа компаний Высшая Лига принимает на своих перевалочных пунктах бой бетона, кирпича и ЖБИ на утилизацию в полном соответствии с отраслевыми стандартами и с предоставлением всех отчетных документов. Один из наиболее распространенных способов утилизации – дробление. Таким образом производится вторсырье – недорогой, но качественный материал для разных строительных работ. Бетонные конструкции перерабатываются с помощью использования мобильной щековой дробильной установки Extec c12 при участии гусиничных эксковаторов с гидромолотом и гидроножницами.</description>
+      </offer>
+    </offers>
+  </shop>
+</yml_catalog>
