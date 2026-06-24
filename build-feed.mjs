@@ -45,11 +45,14 @@ async function fetchPage(url) {
   const backoff = [0, 2000, 5000, 9000, 15000];
   for (let i = 0; i < backoff.length; i++) {
     if (backoff[i]) await sleep(backoff[i]);
+    const ac = new AbortController();
+    const timer = setTimeout(() => ac.abort(), 30000); // без таймаута fetch может зависнуть навечно
     try {
-      const r = await fetch(url, { headers: { 'User-Agent': UA, 'Accept': 'text/html', 'Accept-Language': 'ru,en;q=0.8' } });
+      const r = await fetch(url, { headers: { 'User-Agent': UA, 'Accept': 'text/html', 'Accept-Language': 'ru,en;q=0.8' }, signal: ac.signal });
       if (r.status === 200) return await r.text();
       console.error(`  ${url} → ${r.status}, retry`);
     } catch (e) { console.error(`  ${url} → ${e.message}, retry`); }
+    finally { clearTimeout(timer); }
   }
   throw new Error(`failed ${url}`);
 }
@@ -75,10 +78,14 @@ function extract(html, id, url) {
 const items = [];
 for (const [id, url] of SERVICES) {
   console.error(`fetch ${id}…`);
-  const html = await fetchPage(url);
-  const it = extract(html, id, url);
-  console.error(`  name="${it.name}" descLen=${it.description.length} pic=${it.picture ? 'yes' : 'NO'}`);
-  items.push(it);
+  try {
+    const html = await fetchPage(url);
+    const it = extract(html, id, url);
+    console.error(`  name="${it.name}" descLen=${it.description.length} pic=${it.picture ? 'yes' : 'NO'}`);
+    items.push(it);
+  } catch (e) {
+    console.error(`  SKIP ${id}: ${e.message}`);
+  }
   await sleep(1200);
 }
 
@@ -109,5 +116,11 @@ ${offers}
 </yml_catalog>
 `;
 
+// last-known-good guard: если сайт недоступен и НИ одной услуги не собралось — не писать
+// пустой фид (он сломал бы карточки бота), оставить закоммиченный seed, выйти успешно.
+if (items.length === 0) {
+  console.error('Источник недоступен: 0 услуг. Не перезаписываю feed.xml (last-known-good), выход 0.');
+  process.exit(0);
+}
 writeFileSync(new URL('./feed.xml', import.meta.url), yml, 'utf8');
 console.error(`\nDONE: ${items.length} offers → feed.xml`);
